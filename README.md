@@ -13,6 +13,8 @@ option two is much simpler, since users can put in their grade parcentage and th
 
 this is the motivation for my grade calculator. most assignments are reported back as a fraction. (number of points earned/number of points possible) as a result this web page takes grades as a fraction and weights as a decimal to calculate a user's grade
 
+tldr: i didn't want to have to go through the lengthy process of manually typing each assignment into a calculator and RapidTables doesn't accept fractional inputs so i wrote this simple web app to calculate my grade
+
 ### further development
 currently this version only calculates a user's current grade. future versions hope to include features that calcuate a user's needed grade to obtain a desired grade
 
