@@ -11,7 +11,6 @@ function addNewRow() {
     myTable.appendChild(row);
 }
 
-
 function calcGrade() {
     var table = document.getElementById("myTable");
     var elements = table.getElementsByTagName("input");
@@ -26,6 +25,9 @@ function calcGrade() {
             avgGrade += grade * weight;
         }
     }
-    var average = avgGrade/weights;
-    document.results.average.value = average.toFixed(3);
+    var average = (avgGrade/weights).toFixed(3);
+    document.results.average.value = average;
+    var desGrade =  document.getElementById("desiredGrade").value;
+    var needed = (parseFloat(desGrade) - avgGrade) / (1 - weights);
+    document.results.needed.value = needed.toFixed(3);
 }
