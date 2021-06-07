@@ -16,19 +16,16 @@ function calcGrade() {
     var table = document.getElementById("myTable");
     var elements = table.getElementsByTagName("input");
     var avgGrade = 0;
-
-    for (var i=0; i < elements.length; i+=2) {
-        var grade = elements[i].value;
-        grade =  eval(grade);
-        var weight = elements[i + 1].value;
-
-        avgGrade += grade * weight;
-
+    var weights = 0;
+    for (var i = 0; i < elements.length; i += 2) {
+        if(elements[i].value) {
+            var grade = elements[i].value;
+            grade =  eval(grade);
+            var weight = parseFloat(elements[i + 1].value);
+            weights += weight;
+            avgGrade += grade * weight;
+        }
     }
-    document.results.average.value = avgGrade;
-    console.log(avgGrade);
-
-
-
-
+    var average = avgGrade/weights;
+    document.results.average.value = average.toFixed(3);
 }
