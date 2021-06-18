@@ -1,6 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;700&display=swap');
+
+body {
+  background-color: floralwhite;
+  font-family: 'Roboto Mono', sans-serif;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+h6 {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+}
+
+
+
+
 #myTable th {
     padding-top: 7px;
     padding-bottom: 7px;
-    background-color:darkslategray;
     color: white;
+}
+
+  #myTable {
+    background-color: darkslategray;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border-radius: 7px;
+    
   }
+
+  .btn {
+    border: none;
+	  outline: none;
+    background-color: grey;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    color: white;
+    font-family: 'Roboto Mono', sans-serif;
+    border-radius: 7px;
+  }
+
+
+  .flex-container {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+  }
+
+  .flex-item {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #avgGrade {
+    margin-bottom: 7px;
+  }
+
+  #desiredGrade {
+    margin-bottom: 7px;
+  }
+
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+  }
+
+  #results > label {
+    display: block;
+  }
+
+  #results > input {
+    border-radius: 3px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  

@@ -9,45 +9,56 @@
     <title>Grade Calculator</title>
 </head>
 <body>
-    <form action="results.html" method="GET">
-       <table id="myTable">
-        <tr>
-            <th>Grade</th>
-            <th>Weight</th>
-        </tr>
-        <tr>
-            <td><input size = "15" type="text"></td>
-            <td><input size = "15" type="text"></td>
-        </tr>
-        <tr>
-            <td><input size = "15" type="text"></td>
-            <td><input size = "15" type="text"></td>
-        </tr>
-        <tr>
-            <td><input size = "15" type="text"></td>
-            <td><input size = "15" type="text"></td>
-        </tr>
-        <tr>
-            <td><input size = "15" type="text"></td>
-            <td><input size = "15" type="text"></td>
-        </tr>
-        <tr>
-            <td><input size = "15" type="text"></td>
-            <td><input size = "15" type="text"></td>
-        </tr>
-       </table>
-    </form>
-    <form>
-        <input type="button" value="Add Row" onclick="addNewRow()">
-    </form>
-    <input type="button" value="Calculate" onclick="calcGrade()">
-    <form name = results method="POST">
-        <label for="avgGrade">Average Grade</label>
-        <input type="text" id = "avgGrade" name = "average" readonly><br>
-        <label for="desiredGrade">Desired Grade</label>
-        <input type="text" id = "desiredGrade" name = "desired" value = .70><br>
-        <label for="neededGrade">Needed Grade</label>
-        <input type="text" id = "neededGrade" name = "needed" readonly>
-    </form>
+    <h1>Grade Calculator 🧮</h1>
+    <h6>enter your grade as a fraction (20/26), and enter your weights as decimal (.25)</h6>
+    <div class="flex-container">
+        <div class="flex-item">
+            <form action="results.html" method="GET">
+            <table id="myTable">
+                <tr>
+                    <th>Grade</th>
+                    <th>Weight</th>
+                </tr>
+                <tr>
+                    <td><input size = "10" type="text"></td>
+                    <td><input size = "10" type="text"></td>
+                </tr>
+                <tr>
+                    <td><input size = "10" type="text"></td>
+                    <td><input size = "10" type="text"></td>
+                </tr>
+                <tr>
+                    <td><input size = "10" type="text"></td>
+                    <td><input size = "10" type="text"></td>
+                </tr>
+                <tr>
+                    <td><input size = "10" type="text"></td>
+                    <td><input size = "10" type="text"></td>
+                </tr>
+                <tr>
+                    <td><input size = "10" type="text"></td>
+                    <td><input size = "10" type="text"></td>
+                </tr>
+            </table>
+            </form>
+        </div>
+
+        <div class="flex-item">
+            <button class="btn" onclick="addNewRow()">Add Row</button>
+            <button class="btn" onclick="calcGrade()">Calculate</button>
+    
+            <form name = results id="results" method="POST">
+                <label for="avgGrade">Average Grade</label>
+                <input type="text" id = "avgGrade" name = "average" readonly><br>
+                <label for="desiredGrade">Desired Grade</label>
+                <input type="text" id = "desiredGrade" name = "desired" value = .70><br>
+                <label for="neededGrade">Needed Grade</label>
+                <input type="text" id = "neededGrade" name = "needed" readonly>
+            </form>
+        </div>    
+    </div>
+    <div class="footer">
+        <a href="https://github.com/jnnfrphm/grade-calculator-web">source code</a>
+    </div>
 </body>
 </html>

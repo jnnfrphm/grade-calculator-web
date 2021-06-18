@@ -4,7 +4,7 @@ function addNewRow() {
     for (var  i = 0; i < 2; i ++) {
         var cell = document.createElement("td");
         var input = document.createElement("input");
-        input.size = 15;
+        input.size = 10;
         cell.appendChild(input);
         row.appendChild(cell);
     }
